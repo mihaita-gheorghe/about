@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mihaita Gheorghe | Builder, Engineer & Problem Solver</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%230a0a0a'/%3E%3Ctext x='50' y='50' font-family='monospace' font-size='40' font-weight='bold' fill='%233b82f6' text-anchor='middle' dominant-baseline='central'%3EMG%3C/text%3E%3C/svg%3E">
+    <style>
+        :root {
+            --bg: #0a0a0a;
+            --text-main: #e5e5e5;
+            --text-muted: #a3a3a3;
+            --accent: #3b82f6;
+            --accent-glow: rgba(59, 130, 246, 0.2);
+            --code-font: 'Courier New', Courier, monospace;
+            --body-font: system-ui, -apple-system, sans-serif;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        
+        body {
+            background-color: var(--bg);
+            color: var(--text-main);
+            font-family: var(--body-font);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        .container { max-width: 900px; margin: 0 auto; padding: 0 20px; }
+        h1, h2, h3 { font-family: var(--code-font); letter-spacing: -1px; }
+        .highlight { color: var(--accent); }
+        .btn {
+            display: inline-block; padding: 12px 24px; background: transparent;
+            border: 1px solid var(--accent); color: var(--accent); font-family: var(--code-font);
+            text-decoration: none; cursor: pointer; transition: 0.3s;
+        }
+        .btn:hover { background: var(--accent-glow); }
+
+        header {
+            height: 90vh; display: flex; flex-direction: column; justify-content: center;
+            border-bottom: 1px solid #222;
+        }
+        header h1 { font-size: clamp(2rem, 5vw, 4rem); margin-bottom: 10px; }
+        header p { font-size: 1.2rem; color: var(--text-muted); max-width: 600px; }
+        
+        section { padding: 80px 0; border-bottom: 1px solid #1a1a1a; }
+        h2 { font-size: 2rem; margin-bottom: 40px; border-left: 4px solid var(--accent); padding-left: 15px; }
+
+        .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; }
+        .card { background: #111; padding: 25px; border: 1px solid #222; transition: transform 0.2s; }
+        .card:hover { transform: translateY(-5px); border-color: var(--accent); }
+        .card h3 { margin-bottom: 15px; font-size: 1.1rem; }
+
+        .form-group { margin-bottom: 20px; }
+        label { display: block; margin-bottom: 8px; font-family: var(--code-font); font-size: 0.9rem; color: var(--text-muted); }
+        input, textarea {
+            width: 100%; padding: 15px; background: #111; border: 1px solid #333;
+            color: white; font-family: var(--body-font); font-size: 1rem; outline: none; transition: 0.3s;
+        }
+        input:focus, textarea:focus { border-color: var(--accent); }
+        
+        button#submitBtn {
+            width: 100%; padding: 15px; font-weight: bold; text-transform: uppercase;
+            border: none; background: #333; color: #777; cursor: not-allowed; transition: 0.3s;
+        }
+        button#submitBtn:not([disabled]) {
+            background: var(--text-main); color: var(--bg); cursor: pointer;
+        }
+        button#submitBtn:not([disabled]):hover { background: var(--accent); color: white; }
+
+        footer { text-align: center; padding: 40px; font-size: 0.8rem; color: #444; font-family: var(--code-font); }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div style="font-family: var(--code-font); color: var(--accent); margin-bottom: 20px;">&lt;builder / engineer / problem_solver /&gt;</div>
+            <h1>MIHAITA GHEORGHE</h1>
+            <p>I bridge the gap between business goals and technical reality, prioritizing stable architecture and data-driven decisions to ship value, not just code. I believe that successful engineering requires a deep understanding of the economic and human context in which it lives. I leverage that broader perspective to align technical precision with the chaotic reality of growing a business.</p>
+            <div style="margin-top: 30px;">
+                <a href="#contact" class="btn">INITIALIZE_COMMUNICATION</a>
+            </div>
+        </header>
+
+        <section>
+            <h2>OPERATING_PRINCIPLES</h2>
+            <div class="grid-3">
+                <div class="card">
+                    <h3>Business-First Decisions</h3>
+                    <p>Technology is a means to an end. I connect technical work to measurable outcomes and choose simple, proven solutions that move the needle.</p>
+                </div>
+                <div class="card">
+                    <h3>Lean, Steady Execution</h3>
+                    <p>Favor clarity over cleverness. Reduce friction, keep scope honest, and ship in small, dependable steps.</p>
+                </div>
+                <div class="card">
+                    <h3>Predictable Delivery</h3>
+                    <p>Markets change; plans adapt. I optimize for steady throughput, observability, and feedback loops that keep delivery reliable.</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>TRACK_RECORD</h2>
+            <div class="grid-3">
+                <div class="card">
+                    <h3>Resilient Systems at Scale</h3>
+                    <p>Built and operated services to handle high traffic with simple designs, strong observability, and graceful failure paths.</p>
+                </div>
+                <div class="card">
+                    <h3>Hands-on Team Leadership</h3>
+                    <p>Led small, startup teams with a bias to action: align scope, remove blockers, keep quality high, and maintain momentum.</p>
+                </div>
+                <div class="card">
+                    <h3>Data & Event Pipelines</h3>
+                    <p>Designed ingestion and processing flows focused on reliability, cost, and latency to turn data into usable signals.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>/KEEP_IN_TOUCH</h2>
+            <p style="margin-bottom: 30px; max-width: 600px;">
+                I keep my focus narrow and deep. Reach out for <strong>business challenges demanding technical certainty</strong>, 
+                or when you need to <strong>realign technical reality with executive expectations</strong>.
+            </p>
+
+            <div style="margin-top: 30px;">
+                <a href="https://www.linkedin.com/in/miha1gheorghe/" target="_blank" rel="noopener noreferrer" class="btn">CONNECT_ON_LINKEDIN</a>
+            </div>
+        </section>
+
+        <footer>
+            <p>Operational: Barcelona, ES </p>
+            <p>&copy; 2025 Mihaita Gheorghe</p>
+        </footer>
+    </div>
+
+    <script>
+        console.log("%c Executive presence detected.", "background: #222; color: #3b82f6; font-size:14px; padding:5px;");
+        console.log("Business problems need technical certainty. Let's align.");
+    </script>
+</body>
+</html>
